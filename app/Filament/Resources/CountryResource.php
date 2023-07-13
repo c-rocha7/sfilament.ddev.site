@@ -9,6 +9,7 @@ use Filament\Forms;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Card;
 use Filament\Resources\Form;
+use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
@@ -67,6 +68,8 @@ class CountryResource extends Resource
     {
         return [
             //
+            RelationManagers\EmployeesRelationManager::class,
+            RelationManagers\StatesRelationManager::class,
         ];
     }
 

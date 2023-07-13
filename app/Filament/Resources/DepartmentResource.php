@@ -10,6 +10,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Card;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
+use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\Table;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
@@ -63,6 +64,7 @@ class DepartmentResource extends Resource
     {
         return [
             //
+            RelationManagers\EmployeesRelationManager::class,
         ];
     }
 

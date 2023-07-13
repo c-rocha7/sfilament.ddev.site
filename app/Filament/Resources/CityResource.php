@@ -12,6 +12,7 @@ Use Filament\Forms\Components\Select;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
+use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
@@ -68,6 +69,7 @@ class CityResource extends Resource
     {
         return [
             //
+            RelationManagers\EmployeesRelationManager::class,
         ];
     }
 

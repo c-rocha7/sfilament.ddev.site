@@ -78,7 +78,7 @@ class EmployeeResource extends Resource
                             ->maxLength(255),
                         TextInput::make('zip_code')
                             ->required()
-                            ->maxLength(5),
+                            ->maxLength(7),
                         DatePicker::make('birth_date')
                             ->required(),
                         DatePicker::make('date_hired')
